@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="{% static 'main/htmx/htmx.min.js' %}" defer></script>
+    <script src="{% static 'main/htmx/debug.js' %}" defer></script>
+    <title>
+      {% block title %}
+      IMA | Institution management application
+      {% endblock %}
+    </title>
+  </head>
+
+  <body>
+    {% block body %}
+    <h1>Hello world <strong>IMA</strong> | <i> Institution management application.</i></h1>
+    {% endblock %}
+  </body>
+
+</html>

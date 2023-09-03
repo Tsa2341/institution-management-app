@@ -1,2 +1,3 @@
 django-environ
+django_htmx
 pre-commit

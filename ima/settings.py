@@ -49,7 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
+    # ------- Third-party apps ------- #
+    'main.apps.MainConfig',
+    'django_htmx'
+
 ]
 
 MIDDLEWARE = [
@@ -60,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # ------- Third-party middleware ------- #
+    'django_htmx.middleware.HtmxMiddleware'
 ]
 
 ROOT_URLCONF = 'ima.urls'
